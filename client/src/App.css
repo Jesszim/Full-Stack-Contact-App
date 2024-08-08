@@ -1,0 +1,121 @@
+#navbar{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+.link{
+  text-decoration: none;
+  color: darkred;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(darkred, red,yellow);
+  font-weight: bold;
+
+}
+.link:hover{
+  color:white;
+  transform: scale(1.5);
+  background: linear-gradient(yellow, red,darkred);
+}
+#logo:hover{
+transform: rotate3d(5, 2, 3, 30deg);
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+body{
+  background-color: rgb(66, 63, 63);
+  font-family: lobster, lucida calligraphy
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+  background: linear-gradient(darkred, red,yellow);
+  color: white 
+}
+
+form > input {
+  width : 60%;
+  margin: 10px
+}
+
+.list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+
+}
+
+section{
+  text-align: center;
+}
+.h1{
+  text-decoration: underline;
+  color: white;
+  text-shadow: 5px -5px 10px red;
+}
+.category{
+  color: white;
+}
+.avatar{
+  height: 100px;
+}
+
+#contactContainer{
+  display: flex;
+  width: 75vw;
+  max-width:450px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#box{
+  width: fit-content;
+  height: 200px;
+  margin: 25px;
+  padding: 10px;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: linear-gradient(darkred, red,yellow);
+  color: white
+}
+#editSection{
+  z-index: 1;
+  width: 750px;
+}
+#listbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contactButton{
+  margin-left:10px ;  
+  width: 60px;
+}
+@media (max-width:450px) {
+  #contactContainer{
+    flex-direction: column;
+  }
+  #box{
+    height: fit-content;
+  }
+}
